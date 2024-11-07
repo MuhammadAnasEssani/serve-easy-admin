@@ -1,0 +1,110 @@
+.pos-card-item {
+  position: relative;
+  background-color: white;
+  //width: 250px;
+  border: 1px solid #dedede;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  margin-bottom: 25px;
+
+  .detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border-bottom: 1px solid #e2e2e2;
+  }
+  .pos-img {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: 0.2s;
+    img {
+      width: 50%;
+    }
+  }
+  .pos-status {
+    position: absolute;
+    background-color: #e5fff6;
+    color: #6ec9a8;
+    text-align: center;
+    border-radius: 8px 0px 10px 0;
+    padding: 4px 7px;
+    font-size: 13px;
+    font-weight: bolder;
+    height: 30px;
+  }
+  .pos-edit-icon {
+    position: absolute;
+    right: 0;
+    background-color: #dedede;
+    text-align: center;
+    border-radius: 0px 8px 0px 10px;
+    cursor: pointer;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30px;
+    width: 60px;
+    .line {
+      border-right: 1px solid #bdbdbd;
+      height: 60%;
+    }
+  }
+}
+.pos-card-item.disconnected {
+  .pos-status {
+    background-color: #ffe4e8;
+    color: #f5697a;
+  }
+  .pos-img {
+    filter: opacity(0.2);
+  }
+}
+.pos-delete-modal {
+  .pos-icon {
+    text-align: center;
+    img {
+      width: 100px;
+    }
+  }
+  .pos-content {
+    text-align: center;
+    .title {
+      font-size: 28px;
+      color: #f5697a;
+      font-weight: bolder;
+    }
+    .question {
+      font-size: 19px;
+    }
+  }
+  .action-buttons {
+    display: flex;
+    width: 320px;
+    margin: 20px auto;
+    justify-content: space-between;
+    .pos-delete-btn {
+      width: 150px;
+    }
+    .pos-delete-btn.red {
+      background-color: #f5697a;
+      border-color: #f5697a;
+    }
+  }
+}
+.pos-empty-icon {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 250px;
+  }
+}
+
+.ant-modal {
+  padding-bottom: 0px;
+}

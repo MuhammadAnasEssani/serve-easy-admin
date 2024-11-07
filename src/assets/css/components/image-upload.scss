@@ -1,0 +1,15 @@
+.image-upload {
+  label {
+    margin: 8px 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--field-label-color);
+  }
+}
+.image-preview {
+  object-fit: contain;
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}

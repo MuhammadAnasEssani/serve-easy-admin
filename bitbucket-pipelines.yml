@@ -1,0 +1,74 @@
+pipelines:
+  branches:
+    master:
+      - step:
+          name: Building the app
+          image: node:14.20.0
+          size: 2x
+          script:
+            - cp .env-production .env
+            - yarn install
+            - NODE_OPTIONS="--max-old-space-size=4096" yarn run build
+
+          artifacts:
+            - build/**
+      - step:
+          name: Deploying the app to S3
+          deployment: production
+          script:
+            - pipe: atlassian/aws-s3-deploy:0.2.4
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+                S3_BUCKET: $S3_BUCKET
+                ACL: 'public-read'
+                LOCAL_PATH: 'build/'
+    devops:
+      - step:
+          name: Building the app
+          image: node:14.20.0
+          size: 2x
+          script:
+            - cp .env-staging .env
+            - yarn install
+            - NODE_OPTIONS="--max-old-space-size=4096" yarn run build
+
+          artifacts:
+            - build/**
+      - step:
+          name: Deploying the app to S3 staging
+          deployment: production
+          script:
+            - pipe: atlassian/aws-s3-deploy:0.2.4
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+                S3_BUCKET: $S3_BUCKET_ADMIN_STAGING
+                ACL: 'public-read'
+                LOCAL_PATH: 'build/'
+    QA:
+      - step:
+          name: Building the app
+          image: node:14.20.0
+          size: 2x
+          script:
+            - cp .env-qa .env
+            - yarn install
+            - NODE_OPTIONS="--max-old-space-size=4096" yarn run build
+
+          artifacts:
+            - build/**
+      - step:
+          name: Deploying the app to S3 QA
+          deployment: production
+          script:
+            - pipe: atlassian/aws-s3-deploy:0.2.4
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+                S3_BUCKET: $S3_BUCKET_ADMIN_QA
+                ACL: 'public-read'
+                LOCAL_PATH: 'build/'

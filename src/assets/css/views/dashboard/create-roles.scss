@@ -1,0 +1,152 @@
+.create-roles {
+  .theme-tabs {
+    .ant-tabs-tab-btn {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 23px;
+    }
+  }
+}
+.create-admin-roles {
+  &.skeletons {
+    .shimmer-mbl {
+      display: none;
+    }
+    .heading-skeleton {
+      .ant-skeleton-element {
+        margin: 0 !important;
+      }
+    }
+    .check-box-skeleton {
+      padding: 6px 0;
+      .check-label {
+        margin-top: -3px !important;
+      }
+    }
+  }
+  .createrole-fields {
+    label {
+      font-weight: 600;
+      margin: 10px 0 8px 0;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    &.skeletons {
+      .shimmer-mbl {
+        display: block;
+      }
+      .role-table {
+        table td {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .role-table {
+    margin: 40px 0;
+    .ant-checkbox-wrapper {
+      span {
+        color: var(--text-color-dark);
+      }
+    }
+    label {
+      font-weight: 600;
+      margin: 0 0 8px 0;
+    }
+    table {
+      border: 1px solid var(--r-table-border);
+      border-collapse: collapse;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      table-layout: fixed;
+    }
+
+    table caption {
+      font-size: 1.5em;
+      margin: 0.5em 0 0.75em;
+    }
+
+    table tr {
+      background-color: var(--r-table-even);
+      border: 1px solid var(--r-table-border);
+      padding: 0.35em;
+    }
+    table tr:nth-child(odd) {
+      background-color: var(--r-table-odd);
+    }
+    table th {
+      background-color: #646c7c;
+      padding: 0.825em;
+      text-align: left;
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    table td {
+      padding: 0.925em;
+      text-align: left;
+    }
+
+    table th {
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    @media screen and (max-width: 900px) {
+      table {
+        border: 0;
+      }
+
+      table caption {
+        font-size: 1.3em;
+      }
+
+      table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
+
+      table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: 0.625em;
+      }
+
+      table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: 0.9em;
+        text-align: right;
+      }
+
+      table td::before {
+        /*
+        * aria-label has no advantage, it won't be read inside a table
+        content: attr(aria-label);
+        */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      table td:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+}

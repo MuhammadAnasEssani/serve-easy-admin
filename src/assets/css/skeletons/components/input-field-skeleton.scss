@@ -1,0 +1,17 @@
+.dfields-skeleton {
+  margin: 15px 0;
+  .dfields-label {
+    margin: 22px 0 5px 0;
+    .label {
+      width: 100%;
+      max-width: 100px;
+      height: 10px;
+      border-radius: 5px;
+    }
+  }
+  .dfields-input {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+  }
+}

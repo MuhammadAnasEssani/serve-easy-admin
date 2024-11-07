@@ -1,0 +1,31 @@
+.ant-layout {
+  background: var(--background-smoke);
+}
+.ant-layout-footer {
+  background: var(--background-smoke);
+}
+.ant-layout-content {
+  background: var(--background-layouts) !important;
+  margin-top: 0 !important;
+  flex: initial;
+}
+.ant-layout-sider {
+  transition: all 0.2s;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1420px) {
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+}
+
+@media screen and (min-width: 0) and (max-width: 576px) {
+}

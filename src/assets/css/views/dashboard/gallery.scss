@@ -1,0 +1,149 @@
+.media-gallery {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    gap: 1%;
+    li {
+      margin-bottom: 15px;
+      //flex: 1 1 150px;
+      //width: 9.1%;
+      min-width: 151px;
+      width: 151px;
+      height: 150px;
+      //float: left;
+      border: 1px dashed rgba(0, 0, 0, 0.2);
+      .img-box {
+        padding: 10px;
+        position: relative;
+        cursor: pointer;
+        &.img-overlay {
+          &:before {
+            opacity: 1;
+            transition: 0.2s;
+          }
+          .action-btns {
+            opacity: 1;
+            transition: 0.2s;
+          }
+          .img-fluid {
+            opacity: 0;
+            transition: 3s;
+          }
+          .img-open {
+            opacity: 1;
+            transition: 3s;
+          }
+        }
+        &:hover {
+          &:before {
+            opacity: 1;
+            transition: 0.2s;
+          }
+          .action-btns {
+            opacity: 1;
+            transition: 0.2s;
+          }
+        }
+        &:before {
+          transition: 0.2s;
+          opacity: 0;
+          background: rgba(0, 0, 0, 0.7);
+          position: absolute;
+          content: '';
+          left: 10px;
+          top: 10px;
+          bottom: 10px;
+          right: 10px;
+        }
+        .action-btns {
+          position: absolute;
+          top: 50%;
+          left: 10px;
+          right: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transform: translate(0, -50%);
+          opacity: 0;
+          transition: 0.2s;
+          button {
+            line-height: 0;
+            padding-left: 5px;
+            padding-right: 5px;
+            color: white;
+            font-size: 22px;
+            box-shadow: none;
+            border: none;
+            outline: none;
+            &.btn-delete {
+              color: #dc3545;
+            }
+            svg {
+            }
+          }
+        }
+        .linked-copied {
+          position: absolute;
+          top: 75%;
+          left: 10px;
+          right: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transform: translate(0, -50%);
+          opacity: 0;
+          transition: 0.2s;
+          p {
+            color: white;
+          }
+        }
+        .linked-copied.show {
+          opacity: 1;
+        }
+      }
+      .img-skeleton {
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        z-index: 1;
+      }
+    }
+  }
+
+  .ant-upload.ant-upload-select-picture-card {
+    width: 100%;
+    height: 154px;
+    .anticon-inbox {
+      color: #40a9ff;
+      font-size: 48px;
+    }
+    .ant-upload-text {
+      margin: 0 0 4px;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 16px;
+    }
+    .ant-upload-hint {
+      color: rgba(0, 0, 0, 0.45);
+      font-size: 14px;
+    }
+  }
+  // add css for loading state skeleton
+  .loader-item {
+    width: 142px;
+    z-index: 1;
+    margin: 5px;
+    .ant-skeleton-image {
+      width: 100%;
+      height: 130px;
+    }
+  }
+  .theme-button {
+    display: block;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,13 @@
+.theme-tabs {
+  .ant-tabs-tab-btn {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+  }
+  .ant-tabs-tab-btn {
+    color: var(--text-color-dark);
+  }
+  .ant-tabs-top > .ant-tabs-nav::before {
+    border-bottom: 1px solid var(--tabs-border-line);
+  }
+}

@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: stage
+  name: serveeasyweb
+  labels:
+    app: serveeasyweb
+    env: stage
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: serveeasyweb
+  template:
+    metadata:
+      labels:
+        app: serveeasyweb
+    spec:
+      containers:
+        - name: serveeasyweb
+          image: 307866862898.dkr.ecr.us-east-1.amazonaws.com/serveeasyweb:${BITBUCKET_COMMIT}
+          imagePullPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: serveeasyweb
+  namespace: stage
+spec:
+  type: NodePort
+  selector:
+    app: serveeasyweb
+  ports:
+  - port: 3000
+    name: http

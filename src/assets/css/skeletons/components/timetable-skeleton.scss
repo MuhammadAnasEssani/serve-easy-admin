@@ -1,0 +1,11 @@
+.timetable {
+  &.skeleton {
+    .establishment-time-slots {
+      ul {
+        li {
+          margin: 2px 0;
+        }
+      }
+    }
+  }
+}

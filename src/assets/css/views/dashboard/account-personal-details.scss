@@ -1,0 +1,63 @@
+.account-personal-detail {
+  h2{
+    background: #F7F7F7;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2B3755;
+    padding: 10px 10px;
+    margin-bottom: 0;
+  }
+  .personal-details {
+    //padding: 30px 0;
+    .save-personal-details {
+      label {
+        margin-top: 15px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+      }
+      p {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: var(--theme-font-color);
+        margin-bottom: 30px;
+      }
+      .btn-edit {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        border: 1px solid #0178E5;
+        color: #0178E5;
+      }
+    }
+    .edit-personal-details {
+      .dfields {
+        margin: 15px 0;
+        label {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+      .btn-save {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        border: 1px solid #0178E5;
+        color: #0178E5;
+        margin-top: 10px;
+      }
+    }
+  }
+}

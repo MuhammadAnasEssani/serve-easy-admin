@@ -1,0 +1,20 @@
+.check-box-skeleton {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  gap: 10px;
+  .check {
+    width: 10px;
+    height: 10px;
+  }
+  .check-label {
+    margin-left: 10px;
+    margin-top: 6px;
+    .heading-skeleton {
+      .ant-skeleton-element {
+        display: block;
+        margin: 0;
+      }
+    }
+  }
+}

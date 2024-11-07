@@ -1,0 +1,185 @@
+.create-custom-detail {
+  .left-col {
+    height: 100%;
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 20px 20px 20px 5px;
+    .detail-box {
+      margin: 40px 0;
+      h3 {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 23px;
+        color: var(--theme-grey-text-white);
+      }
+      h4 {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: var(--theme-grey-text);
+      }
+    }
+  }
+  .center-col {
+    height: 100%;
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 20px 20px 20px 5px;
+    .custom-menu-section {
+      .custom-menu-tree {
+        background: transparent;
+        .ant-tree-treenode {
+          display: none;
+        }
+        .ant-tree-list {
+          .ant-tree-treenode {
+            width: 100%;
+            display: flex;
+            background: transparent;
+            border-bottom: 1px solid var(--modal-border);
+            padding: 10px 0;
+            position: relative !important;
+            .ant-tree-node-content-wrapper {
+              .ant-tree-title {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 18px;
+                color: var(--theme-grey-text);
+              }
+              &.ant-tree-node-content-wrapper-open {
+                .ant-tree-title {
+                  font-family: 'Source Sans Pro';
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 14px;
+                  line-height: 18px;
+                  color: #0178e5;
+                }
+              }
+            }
+
+            .ant-tree-switcher {
+              line-height: 16px;
+              svg {
+                color: var(--tab-heading-colors);
+              }
+            }
+          }
+        }
+      }
+    }
+    .combo-list {
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        li {
+          display: flex;
+          align-items: center;
+          margin: 10px 0;
+          font-weight: 600;
+          svg {
+            color: #0d6efd;
+            margin-right: 10px;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .right-col {
+    height: 100%;
+    padding: 20px 20px 20px 5px;
+    h5 {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 18px;
+      color: #0178e5;
+      margin-top: 40px;
+    }
+    .time-Schedule {
+      list-style: none;
+      padding: 10px 0 30px 0;
+      margin: 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+      li {
+        display: flex;
+        align-items: center;
+        margin: 15px 0;
+        .days {
+          min-width: 100px;
+          span {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: var(--theme-grey-text-white);
+          }
+        }
+        .time {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 18px;
+          color: var(--theme-grey-text);
+          span {
+            margin: 0 10px;
+            svg {
+              margin-top: -1px;
+            }
+          }
+        }
+      }
+    }
+    .date-Schedule {
+      list-style: none;
+      padding: 10px 0 30px 0;
+      margin: 0;
+      li {
+        display: flex;
+        align-items: center;
+        margin: 15px 0;
+        .days {
+          min-width: 100px;
+          span {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: var(--theme-grey-text-white);
+          }
+        }
+        .date {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 18px;
+          color: var(--theme-grey-text);
+          span {
+            margin: 0 10px;
+            svg {
+              margin-top: -1px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 1200px) {
+  .create-custom-detail {
+    .button-section {
+      position: fixed;
+      bottom: 0;
+      background: white;
+      width: 94%;
+      border-radius: 5px;
+      left: 20px;
+      right: 0;
+      text-align: center;
+      border-top: 1px solid white;
+      z-index: 99 !important;
+      padding: 10px 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      justify-content: center;
+    }
+  }
+}

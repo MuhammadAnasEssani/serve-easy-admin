@@ -1,0 +1,58 @@
+.otp-field {
+  .OtpInput {
+    input {
+      height: 50px;
+      margin: 0 5px;
+      padding: 0;
+      width: 100% !important;
+      font-size: 25px;
+      border-radius: 5px;
+      background-color: #161b27;
+      color: white;
+      border: 2px solid transparent;
+      &:focus-visible {
+        border: 2px solid white;
+        box-shadow: none !important;
+        outline: none;
+        background-color: #161b27;
+      }
+    }
+  }
+  .otp-actions{
+    display: flex;
+    justify-content: space-between;
+  }
+  .validation-error {
+    margin-top: 10px;
+    margin-left: 5px;
+    color: #f5697a;
+  }
+  p {
+    color: white;
+    font-size: 17px;
+    margin: 15px 0 15px 5px;
+  }
+  a {
+    color: #54b9f5 !important;
+    font-size: 17px;
+  }
+  .ant-statistic {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    .ant-statistic-title {
+      color: white;
+      font-size: 18px;
+      font-family: 'Source Sans Pro', sans-serif;
+      padding-top: 5px;
+    }
+    .ant-statistic-content-value {
+      font-size: 25px;
+      color: #f5697a;
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+  }
+}

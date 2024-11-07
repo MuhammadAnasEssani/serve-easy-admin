@@ -1,0 +1,25 @@
+.create-users {
+  .theme-tabs {
+    .ant-tabs-tab-btn {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 23px;
+    }
+  }
+  .pos-create-users {
+    .createuser-fields {
+      margin: 5px 0;
+      label {
+        margin: 10px 0;
+        font-weight: 600;
+        color: #646c7c;
+      }
+    }
+    .estab-bts {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 20px;
+    }
+  }
+}

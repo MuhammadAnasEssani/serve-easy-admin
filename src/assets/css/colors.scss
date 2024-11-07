@@ -1,0 +1,161 @@
+:root {
+  //Changeable
+  --background: white;
+  --background-smoke: #f5f5f5;
+  --background-layouts: #f5f5f5;
+  --text-color-white: #fff;
+  --text-color-dark: #333;
+  -text-color-greyblue-: #516377;
+  --logo-text: #f1f1f1;
+
+  //Borders
+  --theme-border: transparent;
+  --theme-border-light: #e1e1e1;
+  --ant-table-border: #f0f0f0;
+  --ant-table-td-border: rgba(0, 0, 0, 0.09);
+  --ant-table-tr-hover: #fafafa;
+  --nested-table-td-border: #f0f0f0;
+  --modal-border: #f0f0f0;
+
+  //Box Shadows
+  --theme-shadow: rgba(0, 0, 0, 0.05);
+
+  //Font
+  --bs-body-font-family: 'Source Sans Pro';
+  --header-heading: #2d4047;
+  --tab-heading-colors: #0c1f41;
+  --theme-grey-text: #646c7c;
+  --theme-grey-text-white: #646c7c;
+  --theme-label-color: #4d5464;
+  --theme-silver-text: #dedede;
+
+  //View Card
+  --view-card-background: #fff;
+  --view-card-border: #d4d8ddb0;
+  //UnChangeable
+  --text-color-primary: #0178e5;
+  --text-color-silver: #646c7c;
+
+  //    Sidenav
+  --sidenav-color: #1c212d;
+  --sidenav-text-hover: #161b27;
+  --sidenav-text-hover-after: rgba(0, 0, 0, 0.2);
+  --sidenav-primary: #0178e5;
+  //  Notification
+  --border-bottom-dark: 1px solid rgba(0, 0, 0, 0.1);
+  --not-danger-hover: #fff6f7;
+  --not-success-hover: #f0f8f3;
+  --not-primary-hover: #e4ebf7;
+  --notfication-border: rgba(0, 0, 0, 0.04);
+  --header-link-background: #fff;
+
+  //  Profile
+  --hr: rgba(0, 0, 0, 0.2);
+  --dropdown-hover: rgba(38, 60, 85, 0.06);
+  --dropdown-hover-color: #0178e5;
+  //  Tables
+  --r-table-odd: #fff;
+  --r-table-even: #f8f8f8;
+  --r-table-border: #ddd;
+  --ant-table-th-background: #646c7c;
+  --ant-table-action: #dedede;
+  --pagination-background: white;
+  --nested-table-th-background: #f8f8f8;
+  --ant-table-sorter: #485060;
+
+  //  Category Tables
+  --cat-table-background: #646c7c;
+
+  //  Fields
+  --field-label-color: #1c212d;
+  --field-placeholder-color: #bdbdbd;
+  --field-color: #646c7c;
+  --field-border-color: #dedede;
+  //  Tabs
+  --tabs-border-line: #f0f0f0;
+
+  //  Ant Time pciker
+  --timepicker-disabled-background: #f5f5f5;
+  --timepicker-disabled-color: rgba(0, 0, 0, 0.25);
+
+  //  Select
+  --select-multi-tag-background: #f5f5f5;
+  --select-multi-tag-border: #f0f0f0;
+}
+[data-theme='dark'] {
+  --background: #1c212d;
+  --text-color-white: #333;
+  --text-color-dark: #fff;
+  --background-smoke: #1c212d;
+  --background-layouts: #1c212d;
+  --text-color-greyblue: #a1b0cb;
+  --logo-text: #1c212d;
+
+  //Font
+  --bs-body-font-family: 'Source Sans Pro';
+  --header-heading: white;
+  --tab-heading-colors: white;
+  --theme-grey-text: #a1b0cb;
+  --theme-grey-text-white: #fff;
+  --theme-label-color: #4d5464;
+  --theme-silver-text: #dedede;
+
+  //Borders
+  --theme-border: #36445d;
+  --theme-border-light: #283144;
+  --ant-table-border: #36445d;
+  --ant-table-td-border: #dedede;
+  --ant-table-tr-hover: #1c212d;
+  --nested-table-td-border: rgba(0, 0, 0, 0.08);
+  --modal-border: #36445d;
+
+  //Box Shadows
+  --theme-shadow: rgba(0, 0, 0, 0.3);
+
+  //View Card
+  --view-card-background: #283144;
+  --view-card-border: #36445d;
+  //    Sidenav
+  --sidenav-color: #131517;
+  --sidenav-text-hover: #1d2024;
+  --sidenav-text-hover-after: rgba(245, 245, 245, 0.9);
+
+  //  Notification
+  --border-bottom-dark: 1px solid rgba(255, 255, 255, 0.1);
+  --not-danger-hover: rgba(99, 123, 169, 0.08);
+  --not-success-hover: rgba(99, 123, 169, 0.08);
+  --not-primary-hover: rgba(99, 123, 169, 0.08);
+  --notfication-border: rgba(255, 255, 255, 0.04);
+  --header-link-background: #283144;
+  //  Profile
+  --hr: rgba(255, 255, 255, 0.2);
+  --dropdown-hover: rgba(99, 123, 169, 0.08);
+  --dropdown-hover-color: #fff;
+
+  //  Tables
+  --r-table-odd: #283144;
+  --r-table-even: #1c212d;
+  --r-table-border: #36445d;
+  --ant-table-th-background: transparent;
+  --ant-table-action: #dedede;
+  --pagination-background: transparent;
+  --nested-table-th-background: #36445d;
+  --ant-table-sorter: #1a2438;
+
+  //  Fields
+  --field-label-color: #a1b0cb;
+  --field-placeholder-color: #a1b0cb;
+  --field-color: #a1b0cb;
+  --field-border-color: #546990;
+
+  //  Tabs
+  --tabs-border-line: #546990;
+
+  //  Ant Time pciker
+  --timepicker-disabled-background: #232d3f;
+  --timepicker-disabled-color: rgba(255, 255, 255, 0.35);
+
+  //  Select
+  --select-multi-tag-background: #1a2438;
+  --select-multi-tag-border: #1a2438;
+}

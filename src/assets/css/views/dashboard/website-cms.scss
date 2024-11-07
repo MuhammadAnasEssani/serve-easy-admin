@@ -1,0 +1,27 @@
+.website-cms {
+  .dfields {
+    margin: 10px 0;
+    label {
+      font-weight: 600;
+      margin: 10px 0 8px 0;
+    }
+  }
+
+  .color-field {
+    max-width: 160px;
+    .ant-form-item {
+      border: 1px solid #e7e7e7;
+      padding: 7px 10px;
+      border-radius: 5px;
+      background-color: #f7f7f7;
+      .ant-form-item-label {
+        label {
+          margin: 0;
+        }
+      }
+      .ant-form-item-control-input-content {
+        height: 20px;
+      }
+    }
+  }
+}

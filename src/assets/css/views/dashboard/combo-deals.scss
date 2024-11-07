@@ -1,0 +1,485 @@
+.create-combo-deals {
+  .timetable {
+    padding: 0 0 0 25px;
+    border-left: 1px solid #e2e2e2;
+  }
+  .filter-fields {
+    margin: 15px 0;
+    .Select-field {
+      height: inherit;
+    }
+  }
+  .button-section {
+    padding: 10px 0;
+  }
+  //.dfields {
+  //  .label-out.field-box{
+  //    height: 40px;
+  //  }
+  //  .field-box{
+  //    .form-group{
+  //      .form-control{
+  //        font-size: 15px;
+  //      }
+  //    }
+  //  }
+  //  label{
+  //    font-size: 12px;
+  //    margin: 5px 0;
+  //  }
+  //  .Select-field{
+  //
+  //    label{
+  //      font-size: 12px;
+  //      margin: 5px 0;
+  //    }
+  //    .ant-select{
+  //      font-size: 15px;
+  //      height: 40px;
+  //      .ant-select-selector{
+  //        height: 40px !important;
+  //        .ant-select-selection-overflow{
+  //          margin-top: -9px;
+  //        }
+  //        .ant-select-selection-search-input{
+  //          line-height: 28px;
+  //          font-size: 15px !important;
+  //          height: 40px !important;
+  //          color: var(--field-color);
+  //          font-weight: 500;
+  //        }
+  //      }
+  //      .ant-select-arrow{
+  //        margin-top: -8px;
+  //      }
+  //      .ant-select-selection-item{
+  //        font-size: 15px !important;
+  //        font-weight: 400;
+  //        color: var(--field-color);
+  //        height: 25px;
+  //        line-height:22px;
+  //        max-width: 130px;
+  //      }
+  //      .ant-select-selection-placeholder{
+  //        font-size: 15px !important;
+  //        line-height: 20px;
+  //      }
+  //    }
+  //
+  //  }
+  //}
+
+  //Create Combo
+  .combo-field-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    li {
+      display: flex;
+      justify-content: start;
+      gap: 0 10px;
+      margin: 10px 0;
+      .field-1 {
+        width: 23%;
+      }
+      .field-2 {
+        width: 30%;
+      }
+      .field-3 {
+        width: 18%;
+      }
+      .field-4 {
+        width: 18%;
+      }
+      .field-5 {
+        label {
+          display: block;
+          margin-top: 10px;
+          &.ant-checkbox-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .ant-checkbox {
+              margin-top: 5px;
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+      .field-6 {
+        width: 15%;
+        .edit-btns {
+          margin-top: 50px;
+          .btn-delete {
+            border: 2px solid #0178e5;
+            border-radius: 50%;
+            height: 35px;
+            width: 35px;
+            /* display: flex; */
+            /* align-items: center; */
+            /* justify-content: center; */
+            text-align: center;
+            color: #0178e5;
+            font-size: 20px;
+            position: relative;
+            svg {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+          .btn-add {
+            border: 2px solid #0178e5;
+            background-color: #0178e5;
+            border-radius: 50%;
+            height: 35px;
+            width: 35px;
+            /* display: flex; */
+            /* align-items: center; */
+            /* justify-content: center; */
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            position: relative;
+            svg {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+        }
+
+        button {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+
+  .combo-list-total {
+    display: flex;
+    justify-content: end;
+    gap: 0 15px;
+    margin: 30px 0 0 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 30px;
+    h5 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      color: #0178e5;
+    }
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #646c7c;
+    }
+  }
+  //End Create Combo
+
+  //Create
+  .deals-field-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      display: flex;
+      justify-content: start;
+      gap: 0 10px;
+      margin: 10px 0;
+      .field-1 {
+        width: 23%;
+      }
+      .field-2 {
+        width: 32.3%;
+      }
+      .field-3 {
+        width: 18%;
+      }
+      .field-4 {
+        width: 18%;
+      }
+      .field-5 {
+        width: 14%;
+      }
+      .field-6 {
+        width: 15%;
+        .edit-btns {
+          margin-top: 40px;
+          .btn-delete {
+            border: 2px solid #0178e5;
+            border-radius: 50%;
+            height: 35px;
+            width: 35px;
+            /* display: flex; */
+            /* align-items: center; */
+            /* justify-content: center; */
+            text-align: center;
+            color: #0178e5;
+            font-size: 20px;
+            position: relative;
+            svg {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+          .btn-add {
+            border: 2px solid #0178e5;
+            background-color: #0178e5;
+            border-radius: 50%;
+            height: 35px;
+            width: 35px;
+            /* display: flex; */
+            /* align-items: center; */
+            /* justify-content: center; */
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            position: relative;
+            svg {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+        }
+
+        button {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+
+  .deals-list-total {
+    display: flex;
+    justify-content: end;
+    gap: 0 15px;
+    margin: 30px 0 0 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 30px;
+    h5 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      color: #0178e5;
+    }
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #646c7c;
+    }
+  }
+  //End Create Deals
+}
+.combo-fields {
+  margin: 5px 0;
+  label {
+    margin: 10px 0;
+    font-weight: 600;
+    //color: #646C7C;
+  }
+}
+
+.combo-section {
+  background-color: whitesmoke;
+  padding: 10px 15px;
+  border-radius: 10px;
+  .combo-row {
+    display: flex;
+    gap: 10px;
+    .field-1 {
+      width: 46%;
+    }
+    .field-2 {
+      width: 15%;
+    }
+    .field-3 {
+      width: 15%;
+    }
+    .field-4 {
+      width: 15%;
+    }
+    .field-5 {
+      label {
+        display: block;
+        margin-top: 15px;
+        &.ant-checkbox-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .ant-checkbox {
+            margin-top: 5px;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+  .multiple-combo-row {
+    display: flex;
+    gap: 10px;
+    .field-1 {
+      width: 23%;
+    }
+    .field-2 {
+      width: 22.3%;
+    }
+    .field-3 {
+      width: 15%;
+    }
+    .field-4 {
+      width: 15%;
+    }
+    .field-5 {
+      width: 15%;
+    }
+    .field-6 {
+      label {
+        display: block;
+        margin-top: 15px;
+        &.ant-checkbox-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .ant-checkbox {
+            margin-top: 5px;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+.deals-section {
+  background-color: whitesmoke;
+  padding: 10px 15px;
+  border-radius: 10px;
+  .deals-row {
+    display: flex;
+    gap: 10px;
+    .field-1 {
+      width: 46%;
+    }
+    .field-2 {
+      width: 15%;
+    }
+    .field-3 {
+      width: 15%;
+    }
+    .field-4 {
+      width: 15%;
+    }
+    .field-5 {
+      label {
+        display: block;
+        margin-top: 15px;
+        &.ant-checkbox-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .ant-checkbox {
+            margin-top: 5px;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+  .multiple-deals-row {
+    display: flex;
+    gap: 10px;
+    .field-1 {
+      width: 23%;
+    }
+    .field-2 {
+      width: 22.3%;
+    }
+    .field-3 {
+      width: 15%;
+    }
+    .field-4 {
+      width: 15%;
+    }
+    .field-5 {
+      width: 15%;
+    }
+    .field-6 {
+      label {
+        display: block;
+        margin-top: 15px;
+        &.ant-checkbox-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .ant-checkbox {
+            margin-top: 5px;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1016px) {
+  .create-combo-deals {
+    .combo-field-list {
+      margin-top: 30px;
+      li {
+        //background: #f5f5f5;
+        border: 1px solid var(--theme-border-light);
+        padding: 10px 15px;
+        border-radius: 5px;
+        flex-wrap: wrap;
+        .field-1 {
+          flex: 1 1 49%;
+          .filter-fields {
+            .Select-field {
+              height: inherit;
+            }
+          }
+        }
+        .field-2 {
+          flex: 1 1 49%;
+          .filter-fields {
+            .multi-select {
+              height: inherit;
+            }
+          }
+        }
+        .field-3 {
+          flex: 1 1 49%;
+        }
+        .field-4 {
+          flex: 1 1 49%;
+        }
+        .field-5 {
+          flex: 1 1 49%;
+          .combo-checkbox-field {
+            display: flex;
+            align-items: center;
+          }
+        }
+        .field-6 {
+          flex: 1 1 49%;
+          .edit-btns {
+            margin-top: 20px;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}

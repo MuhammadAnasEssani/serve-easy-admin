@@ -1,0 +1,22 @@
+.item-summary {
+  .ant-table-content {
+    .ant-table-cell-with-append {
+      span {
+        &:nth-of-type(2) {
+          margin-right: 20px;
+          font-weight: bold;
+          cursor: pointer;
+          svg {
+            margin-top: -2px;
+          }
+        }
+      }
+    }
+  }
+  .expand-btn {
+    border: 1px solid #0178e5;
+    color: #0178e5;
+    padding: 5px 30px;
+    margin: 20px 20px 20px 0;
+  }
+}

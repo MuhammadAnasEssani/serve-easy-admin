@@ -1,0 +1,124 @@
+.create-category {
+  .ant-tag-green {
+    background: rgba(69, 203, 133, 0.1);
+    color: #45cb85;
+    border: 1px solid #45cb85;
+  }
+  .ant-table-row-expand-icon-cell {
+    width: 2%;
+  }
+  table {
+    //border-collapse:separate !important;
+    //border-spacing: 0 10px;
+    .ant-table-expanded-row {
+      .ant-table-cell {
+        padding-left: 0;
+        padding-right: 0;
+        background: white;
+      }
+    }
+    tr {
+      td {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        &:before {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          width: 1px;
+          height: 1.4em;
+          background-color: rgba(0, 0, 0, 0.06);
+          transform: translateY(-50%);
+          transition: background-color 0.3s;
+          content: '';
+        }
+        &:last-child {
+          &:before {
+            background-color: rgba(0, 0, 0, 0);
+          }
+        }
+      }
+      //background: #f5f5f5;
+    }
+  }
+}
+.CategoryWrapper {
+  .subcat-title {
+    margin-left: 10%;
+    margin-bottom: 0;
+    padding: 0 0 15px 0;
+  }
+  .add-sub-category-form {
+    display: flex;
+    background: #f0f0f0;
+    align-items: center;
+    padding: 20px 10px;
+    justify-content: space-around;
+    .add-subcategory-fields {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0 10px;
+      .field-box {
+      }
+    }
+  }
+}
+
+.subCategoryWrapper {
+  .subcat-title {
+    margin-left: 8%;
+    margin-bottom: 0;
+    padding: 0 0 15px 0;
+  }
+  .add-sub-category-form {
+    display: flex;
+    background: #f0f0f0;
+    align-items: center;
+    padding: 20px 10px;
+    justify-content: space-around;
+    .add-subcategory-fields {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0 10px;
+      .field-box {
+      }
+    }
+  }
+}
+.menu-listing {
+  .excel-btn {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #4caf50;
+    border: 1px solid #e5e5e5;
+    padding: 3px 10px;
+  }
+
+  .ant-table-container {
+    table {
+      .ant-table-row-level-0 {
+        .first-col {
+          padding-left: 20px;
+        }
+        &:nth-of-type(2) {
+          .first-col {
+            padding-left: 20px;
+          }
+        }
+      }
+      .ant-table-row-level-1 {
+        .first-col {
+          padding-left: 40px;
+        }
+      }
+      .ant-table-row-level-2 {
+        .first-col {
+          padding-left: 50px;
+        }
+      }
+    }
+  }
+}

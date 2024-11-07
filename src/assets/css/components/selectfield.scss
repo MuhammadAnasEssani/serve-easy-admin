@@ -1,0 +1,93 @@
+.Select-field {
+  display: flex;
+  flex-direction: column;
+  transition: 0.1s all;
+  margin: 15px 0;
+  .select-field-prefix {
+    position: relative;
+    &.show {
+      .prefix-icon-wrapper {
+        position: absolute;
+        z-index: 1;
+        width: 2rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+          font-size: 18px;
+          color: var(--field-color);
+          margin-left: 3px;
+        }
+      }
+      .ant-select-selection-search-input {
+        padding-left: calc(2rem - 8px) !important;
+      }
+      .ant-select .ant-select-selector {
+        padding-left: calc(2.5rem - 8px) !important;
+      }
+    }
+  }
+
+  .ant-select {
+    width: 100% !important;
+    height: 50px;
+    border-radius: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: 0.1s all;
+    //Multi select
+    .ant-select-selection-overflow {
+      margin-top: -8px;
+    }
+    .ant-select-selection-placeholder {
+      //line-height: 48px;
+      font-size: 16px !important;
+      color: var(--field-placeholder-color);
+      opacity: 1;
+    }
+    .ant-select-selection-item {
+      //line-height: 48px;
+      font-size: 16px !important;
+      font-weight: 400;
+      color: var(--field-color);
+    }
+    &.ant-select-multiple {
+      .ant-select-selection-item {
+        //line-height: 48px;
+        font-size: 21px !important;
+        font-weight: 400;
+        color: var(--field-color);
+        background-color: var(--select-multi-tag-background);
+        border: 1px solid var(--select-multi-tag-border);
+      }
+    }
+    .ant-select-selection-search-input {
+      line-height: 48px;
+      font-size: 16px !important;
+      height: 48px !important;
+      font-family: 'Source Sans Pro', sans-serif;
+      color: var(--field-color);
+      font-weight: 400;
+    }
+    .ant-select-arrow {
+      color: var(--field-placeholder-color);
+    }
+  }
+  .ant-select-selector {
+    height: 50px !important;
+    border-radius: 5px !important;
+    padding: 8px 11px !important;
+    position: relative;
+  }
+  label {
+    margin: 8px 0 8px 0;
+    line-height: 18px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--field-label-color);
+  }
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    background: transparent;
+    border: 1px solid var(--field-border-color);
+  }
+}

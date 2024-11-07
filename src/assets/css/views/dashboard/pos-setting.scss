@@ -1,0 +1,126 @@
+.pos-setting {
+  .pos-heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    color: #1c212d;
+    background: #f7f7f7;
+    padding: 10px;
+  }
+  .dfields {
+    margin: 5px 0;
+    label {
+      margin: 10px 0;
+      font-weight: 600;
+      color: #646c7c;
+    }
+  }
+  .pos-logout-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    .radio-min {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      small {
+        //font-weight: 600;
+        //color: #646C7C;
+        font-size: 14px;
+      }
+      .dfields {
+        display: flex;
+        align-items: center;
+        position: relative;
+        flex-direction: row-reverse;
+        max-width: 180px;
+        margin: 0;
+        label {
+          margin-right: 10px;
+        }
+        .label-out.field-box {
+          height: 10px;
+        }
+        .field-box {
+          margin-right: 10px;
+          .form-group {
+            .form-control {
+              font-size: 14px;
+            }
+          }
+        }
+        .minutes-input {
+          display: flex;
+          gap: 6px;
+          align-items: center;
+          width: 140px;
+        }
+        .errors {
+          position: absolute;
+          bottom: -15px;
+          left: -5px;
+          small {
+            font-size: 12px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+
+  .tip-field {
+    margin-top: 40px;
+    .dash-heading {
+      span {
+        font-size: 14px;
+      }
+    }
+    .tip-switch {
+      label {
+        margin-right: 10px;
+      }
+    }
+    .tip-fields-section {
+      display: flex;
+      gap: 8px;
+      .dfields {
+        width: 70px;
+        .field-box {
+          gap: 5px;
+        }
+        .form-group {
+          input {
+            width: 25px;
+          }
+        }
+        label {
+          display: none;
+        }
+        input[disabled] {
+          opacity: 0.5;
+        }
+        input[type='number'] {
+          -moz-appearance: textfield;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        .field-success {
+          svg {
+            font-size: 17px;
+            color: #bdbdbd;
+          }
+        }
+        .field-error {
+          svg {
+            font-size: 17px;
+            color: #bdbdbd;
+          }
+        }
+      }
+    }
+  }
+}

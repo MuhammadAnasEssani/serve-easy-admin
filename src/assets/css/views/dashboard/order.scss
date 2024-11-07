@@ -1,0 +1,74 @@
+.order {
+  .ThemeBtn {
+    .btn {
+      height: 30px;
+      padding: 0;
+    }
+  }
+  .dfields {
+    label {
+      font-size: 12px;
+      margin: 5px 0;
+    }
+    .field-box {
+      height: 30px;
+      font-size: 14px;
+      .form-group {
+        .form-control {
+          height: 30px;
+          font-size: 14px;
+        }
+      }
+    }
+    .ant-space {
+      gap: 0px !important;
+    }
+    .ant-picker-range {
+      height: 30px;
+      border-radius: 5px;
+    }
+    .Select-field {
+      height: 30px;
+      label {
+        font-size: 12px;
+        margin: 5px 0;
+      }
+      .ant-select {
+        font-size: 14px;
+        .ant-select-selector {
+          height: 30px !important;
+          .ant-select-selection-overflow {
+            margin-top: -15px;
+          }
+          .ant-select-selection-search-input {
+            line-height: 28px;
+            font-size: 14px !important;
+            height: 30px !important;
+            color: var(--field-color);
+            font-weight: 600;
+          }
+        }
+        .ant-select-selection-item {
+          font-size: 14px !important;
+          font-weight: 400;
+          color: var(--field-color);
+          height: 20px;
+          line-height: 14px;
+        }
+        .ant-select-selection-placeholder {
+          font-size: 14px !important;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .order {
+    .filter-sec {
+      .theme-button {
+        margin-top: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+.search-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  width: 100%;
+  .search-icon {
+    color: #333;
+    font-size: 30px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+  }
+  .form-group {
+    width: 100%;
+    .form-control {
+      border: none;
+      background-color: transparent;
+      padding-left: 0;
+      height: 58px;
+      font-size: 24px;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+  .cancel {
+    padding: 0 10px;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      li {
+        padding: 0 10px;
+      }
+    }
+  }
+}
+.ant-select-disabled.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  color: rgba(0, 0, 0, 0.25);
+  background: var(--background-layouts);
+  cursor: not-allowed;
+}
+.search-result-section {
+  background-color: transparent;
+  .search-categories {
+    background-color: transparent;
+    padding: 5px 10px;
+    h6 {
+      margin: 0;
+    }
+  }
+  .search-values {
+    display: flex;
+    align-content: center;
+    padding: 5px 0;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    &:hover {
+      background-color: #242831;
+      transition: 0.3s ease-out;
+      .search-result-icon {
+        color: white;
+      }
+      .search-content {
+        h5 {
+          color: white;
+        }
+        p {
+          color: white;
+        }
+      }
+    }
+    .search-result-icon {
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 10px;
+      color: #242831;
+    }
+    .search-content {
+      width: 100%;
+      .search-text {
+        color: #0d6efd;
+      }
+      h5 {
+        margin: 0;
+        color: #242831;
+      }
+      p {
+        margin: 0;
+        font-size: 13px;
+        color: #242831;
+      }
+    }
+    .enter-icon {
+      color: white;
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 10px;
+    }
+  }
+}

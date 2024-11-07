@@ -1,0 +1,146 @@
+.settings {
+  .theme-tabs {
+    .ant-tabs {
+      &.error-pos {
+        .ant-tabs-nav-list {
+          .ant-tabs-tab {
+            &:nth-child(1) {
+              .ant-tabs-tab-btn {
+                color: red !important;
+              }
+              &.ant-tabs-tab-active {
+                #rc-tabs-1-tab-1 {
+                  color: red;
+                }
+              }
+            }
+          }
+          .ant-tabs-ink-bar {
+            position: absolute;
+            background: red;
+            pointer-events: none;
+          }
+        }
+      }
+      &.error-online {
+        .ant-tabs-nav-list {
+          .ant-tabs-tab {
+            &:nth-child(2) {
+              .ant-tabs-tab-btn {
+                color: red !important;
+              }
+              &.ant-tabs-tab-active {
+                #rc-tabs-1-tab-1 {
+                  color: red;
+                }
+              }
+            }
+          }
+          .ant-tabs-ink-bar {
+            position: absolute;
+            background: red;
+            pointer-events: none;
+          }
+        }
+      }
+      &.error-tax {
+        .ant-tabs-nav-list {
+          .ant-tabs-tab {
+            &:nth-child(3) {
+              .ant-tabs-tab-btn {
+                color: red !important;
+              }
+              &.ant-tabs-tab-active {
+                #rc-tabs-1-tab-1 {
+                  color: red;
+                }
+              }
+            }
+          }
+          .ant-tabs-ink-bar {
+            position: absolute;
+            background: red;
+            pointer-events: none;
+          }
+        }
+      }
+      &.error-business {
+        .ant-tabs-nav-list {
+          .ant-tabs-tab {
+            &:nth-child(4) {
+              .ant-tabs-tab-btn {
+                color: red !important;
+              }
+              &.ant-tabs-tab-active {
+                #rc-tabs-1-tab-1 {
+                  color: red;
+                }
+              }
+            }
+          }
+          .ant-tabs-ink-bar {
+            position: absolute;
+            background: red;
+            pointer-events: none;
+          }
+        }
+      }
+    }
+  }
+  .tax-field-list {
+    padding: 0;
+    .tax-setting-list {
+      display: flex;
+      gap: 15px;
+      .field-6 {
+        width: 15%;
+        .edit-btns {
+          margin-top: 50px;
+          .btn-delete {
+            border: 2px solid #0178e5;
+            border-radius: 50%;
+            height: 35px;
+            width: 35px;
+            /* display: flex; */
+            /* align-items: center; */
+            /* justify-content: center; */
+            text-align: center;
+            color: #0178e5;
+            font-size: 20px;
+            position: relative;
+            svg {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+          .btn-add {
+            border: 2px solid #0178e5;
+            background-color: #0178e5;
+            border-radius: 50%;
+            height: 35px;
+            width: 35px;
+            /* display: flex; */
+            /* align-items: center; */
+            /* justify-content: center; */
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            position: relative;
+            svg {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+        }
+
+        button {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}

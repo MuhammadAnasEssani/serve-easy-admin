@@ -1,0 +1,3 @@
+https://www.algolia.com/doc/guides/getting-analytics/search-analytics/out-of-the-box-analytics/
+
+https://pixinvent.com/demo/materialize-mui-react-nextjs-admin-template/demo-1/dashboards/analytics/

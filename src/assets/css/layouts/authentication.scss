@@ -1,0 +1,79 @@
+.Auth-Layout {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, transparent, #1c1f23);
+  overflow: hidden;
+  font-family: 'Source Sans Pro', sans-serif;
+
+  // Login section
+  .login-section {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(41, 48, 57, 0.95);
+    width: 40%;
+    height: 100%;
+    padding: 40px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    overflow-y: scroll;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1420px) {
+  .Auth-Layout {
+    // Login section
+    .login-section {
+      width: 40%;
+      height: 100%;
+      padding: 40px 10px;
+    }
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .Auth-Layout {
+    // Login section
+    .login-section {
+      width: 43%;
+      height: 100%;
+      padding: 40px 10px;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .Auth-Layout {
+    // Login section
+    .login-section {
+      width: 43%;
+      height: 100%;
+      padding: 40px 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .Auth-Layout {
+    width: 100%;
+    height: 100vh;
+    // Login section
+    .login-section {
+      width: 100%;
+      height: 100%;
+      padding: 40px 40px;
+    }
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 576px) {
+  .Auth-Layout {
+    width: 100%;
+    height: 100vh;
+    // Login section
+    .login-section {
+      width: 100%;
+      height: 100%;
+      padding: 20px 20px;
+    }
+  }
+}

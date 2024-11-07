@@ -1,0 +1,59 @@
+.timetable {
+  height: 100%;
+  //padding: 20px 40px 20px 20px;
+  h2 {
+    color: var(--text-color-dark);
+  }
+  p {
+    color: var(--text-color-dark);
+  }
+  h4 {
+    color: var(--text-color-dark);
+  }
+  .establishment-time-slots {
+    margin: 20px 0;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin: 10px 0;
+        .check-days {
+          color: var(--text-color-dark);
+        }
+        .days {
+          min-width: 120px;
+        }
+        .time {
+          display: flex;
+          align-items: center;
+          .dash {
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+  }
+  .establishment-date {
+    .custom-date-avail {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          margin: 15px 0;
+          display: flex;
+          align-items: center;
+          justify-content: start;
+          p {
+            margin-right: 30px;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,342 @@
+.field-area-out {
+  margin: 15px 0;
+  label {
+    margin: 8px 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+.field-grey {
+  background-color: #f0f0f0;
+  &:focus-within {
+    background-color: #f4f4f4;
+  }
+  &:hover {
+    background-color: #f4f4f4;
+  }
+  .form-group {
+    label {
+      font-weight: 400;
+    }
+    .form-control {
+      color: #646c7c;
+      font-weight: 400;
+      &::placeholder {
+        color: #646c7c;
+        //   opacity: 0.7;
+      }
+    }
+  }
+  .input-icon {
+    color: #646c7c;
+  }
+}
+.field-white {
+  background-color: transparent;
+  border: 1px solid var(--field-border-color);
+  &:focus-within {
+    background-color: transparent;
+  }
+  &:hover {
+    background-color: transparent;
+  }
+  .form-group {
+    label {
+      font-weight: 400;
+    }
+    .form-control {
+      font-weight: 400;
+      font-size: 16px;
+      color: var(--field-color);
+      &::placeholder {
+        color: var(--field-placeholder-color);
+        opacity: 1;
+      }
+    }
+  }
+  .input-icon {
+    color: #646c7c;
+  }
+}
+.field-dark {
+  background-color: #242831;
+  &:focus-within {
+    background-color: #2e3442;
+  }
+  &:hover {
+    background-color: #2e3442;
+  }
+  .form-group {
+    label {
+      font-weight: 400;
+    }
+    .form-control {
+      color: white;
+      font-weight: 400;
+      &::placeholder {
+        color: #646c7c;
+        //   opacity: 0.7;
+      }
+    }
+  }
+  .input-icon {
+    color: white;
+  }
+}
+
+.label-in {
+  &.field-box {
+    height: 88px;
+    padding: 15px 20px;
+  }
+}
+.label-out {
+  &.field-box {
+    height: 50px;
+    padding: 15px 10px;
+    border-radius: 5px;
+  }
+}
+.label-white {
+  color: white;
+}
+.label-dark {
+  color: var(--field-label-color);
+}
+.label-outside {
+  margin-top: 10px;
+}
+.errors {
+  color: #f5697a;
+  padding: 0 10px;
+}
+.field-box {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  gap: 20px;
+  &.field-error {
+    .form-group {
+      .form-control {
+        color: #f5697a;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .form-group {
+    width: 100%;
+    label {
+      margin: 0;
+    }
+    .form-control {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      border-radius: 0;
+      height: 50px;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:focus {
+      transition: background-color 600000s 0s, color 600000s 0s;
+      background-color: transparent !important;
+    }
+  }
+  .PhoneInputInput{
+    border: none;
+    &:active{
+      border: none;
+      outline: none;
+    }
+    &:focus{
+      border: none;
+      outline: none;
+    }
+  }
+  .input-icon {
+    height: 58px;
+    width: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+  }
+  .error-icon {
+    height: 58px;
+    width: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    .field-success {
+      color: white;
+      font-size: 30px;
+      color: #6ec9a8;
+    }
+    .field-error {
+      color: white;
+      font-size: 30px;
+      color: #f5697a;
+    }
+  }
+}
+
+//Textarea
+.textarea-box {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  gap: 20px;
+  border-radius: 5px;
+  &.field-white {
+    background-color: transparent;
+    border: 1px solid var(--field-border-color);
+  }
+  &.field-error {
+    .form-group {
+      .form-control {
+        color: #f5697a;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .form-group {
+    width: 100%;
+    label {
+      margin: 0;
+    }
+    .form-control {
+      background-color: transparent;
+      border: none;
+      padding: 5px 10px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--field-color);
+      border-radius: 5px;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:focus {
+      transition: background-color 600000s 0s, color 600000s 0s;
+      background-color: transparent !important;
+    }
+  }
+  .input-icon {
+    height: 58px;
+    width: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+  }
+  .error-icon {
+    height: 58px;
+    width: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    .field-success {
+      color: white;
+      font-size: 30px;
+      color: #6ec9a8;
+    }
+    .field-error {
+      color: white;
+      font-size: 30px;
+      color: #f5697a;
+    }
+  }
+}
+
+//Check Filed
+.check-field {
+  color: white;
+  .form-check {
+    display: flex;
+    align-items: center;
+    label {
+      margin: 0 10px;
+    }
+    .form-check-input {
+      width: 1.4em;
+      height: 1.4em;
+    }
+  }
+
+  &.circle {
+    .form-check-input[type='checkbox'] {
+      border-radius: 50%;
+    }
+  }
+}
+
+.form-check-input:checked {
+  background-color: #6ec9a8;
+  border-color: #6ec9a8;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='none' stroke='%230178E5' strokeLinecap='round' strokeLinejoin='round' strokeWidth='3' d='M6 10l3 3 6-6'/%3E%3C/svg%3E");
+}
+
+.transparent {
+  .form-check-input {
+    background-color: transparent;
+    border-color: white;
+  }
+}
+.green {
+  .form-check-input {
+    background-color: transparent;
+    border-color: #6ec9a8;
+  }
+  .form-check-input:checked {
+    background-color: #6ec9a8;
+    border-color: #6ec9a8;
+  }
+  .form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(110, 201, 168, 0.25);
+  }
+}
+.blue {
+  .form-check-input {
+    background-color: transparent;
+    border-color: #0d6efd;
+  }
+  .form-check-input:checked {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+  }
+}
+.dark {
+  .form-check-input {
+    background-color: transparent;
+    border-color: #646c7c;
+  }
+  .form-check-input:checked {
+    background-color: #646c7c;
+    border-color: #646c7c;
+  }
+  .form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(100, 108, 124, 0.25);
+  }
+}
+
+.field-card {
+  &.dark {
+    background-color: #242831;
+  }
+}

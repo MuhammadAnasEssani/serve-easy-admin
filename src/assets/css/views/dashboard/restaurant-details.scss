@@ -1,0 +1,153 @@
+.restaurant-details {
+  //.rd-card{
+  //  border: 1px solid #e7e7e7;
+  //  padding: 20px 15px;
+  //  border-radius: 15px;
+  //  .rd-card-header{
+  //    text-align: center;
+  //    h3{
+  //      font-family: 'Source Sans Pro';
+  //      font-style: normal;
+  //      font-weight: 700;
+  //      font-size: 24px;
+  //      /* identical to box height */
+  //      color: #0C1F41;
+  //      margin-bottom: 5px;
+  //    }
+  //    p{
+  //      font-weight: 400;
+  //      font-size: 14px;
+  //      /* 646C7C */
+  //      color: #646C7C;
+  //
+  //    }
+  //  }
+  //  .rd-card-content{
+  //    p{
+  //      font-weight: 600;
+  //      font-size: 17px;
+  //      color: #646C7C;
+  //      span{
+  //
+  //      }
+  //    }
+  //  }
+  //}
+
+  .rd-header {
+    text-align: left;
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 15px;
+    h2 {
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 34px;
+      /* identical to box height */
+      color: #0c1f41;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      span {
+        font-size: 17px;
+        cursor: pointer;
+        color: #646c7c;
+      }
+    }
+    small {
+      font-weight: 400;
+      font-size: 16px;
+      color: #646c7c;
+    }
+  }
+  .rd-detail {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    li {
+      display: inline-block;
+      margin: 10px 20px;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        .rd-box {
+          border-right: none;
+        }
+      }
+      .rd-box {
+        border-right: 1px solid #e7e7e7;
+        padding-right: 30px;
+        h3 {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          color: #0178e5;
+          margin-bottom: 0;
+        }
+        p {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 17px;
+          line-height: 25px;
+          /* 646C7C */
+          color: #646c7c;
+        }
+      }
+    }
+  }
+  .other-detail-box {
+    p {
+      font-weight: 600;
+      font-size: 17px;
+      color: #646c7c;
+      span {
+        color: black;
+      }
+    }
+  }
+  .setting-box {
+    .accordion-item {
+      .accordion-header {
+        .accordion-button {
+          box-shadow: none;
+          h4 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 0;
+            color: #0178e5;
+            display: flex;
+            align-items: center;
+            svg {
+              margin-right: 10px;
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        border-bottom: 1px solid #e7e7e7;
+        padding: 10px 0;
+        &:last-child {
+          border-bottom: none;
+        }
+        h5 {
+          margin-bottom: 5px;
+          font-size: 18px;
+          font-weight: 600;
+        }
+        p {
+          margin-bottom: 0;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

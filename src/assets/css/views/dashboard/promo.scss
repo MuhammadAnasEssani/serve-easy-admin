@@ -1,0 +1,63 @@
+.promo {
+  .promo-fields {
+    label {
+      font-weight: 600;
+      margin: 10px 0 8px 0;
+    }
+    .ant-space-vertical {
+      width: 100%;
+      gap: 0 !important;
+      .ant-picker-large {
+        border-radius: 5px;
+        padding: 12px 16px 12px;
+        width: 100%;
+        .ant-picker-input > input {
+          font-size: 16px;
+          font-weight: 400;
+          color: var(--field-color);
+        }
+        .ant-picker-clear {
+          right: 16px;
+        }
+      }
+    }
+  }
+  .center-col-2 {
+    h5 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      color: var(--theme-label-color);
+      margin-top: 20px;
+    }
+    .multi-select {
+      .ant-select {
+        height: auto !important;
+        .ant-select-selector {
+          height: auto !important;
+          padding: 5px 5px !important;
+        }
+        .ant-select-selection-overflow {
+          margin-top: 0;
+          .anticon-close {
+            background: #0178e5;
+            padding: 2px;
+            border-radius: 50%;
+            color: white;
+          }
+        }
+      }
+      .ant-select.ant-select-multiple {
+        .ant-select-selection-item {
+          font-size: 16px !important;
+          font-weight: 400;
+          color: var(--field-color);
+          border-radius: 20px;
+          padding: 0 10px;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}

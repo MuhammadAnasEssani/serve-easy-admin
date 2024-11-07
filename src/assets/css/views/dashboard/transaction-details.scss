@@ -1,0 +1,243 @@
+.transaction-details {
+  .user-detail {
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 10px 25px;
+      li {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        /* identical to box height */
+        /* 646C7C */
+        color: var(--theme-grey-text);
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+        svg {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .payment-detail-table {
+    table {
+      border-collapse: collapse;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      table-layout: fixed;
+      tr {
+        padding: 0.15em;
+
+        th {
+          font-size: 0.85em;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          padding: 0.225em;
+          text-align: left;
+          color: #0178e5;
+        }
+        td {
+          padding: 0.225em;
+          text-align: left;
+          font-weight: 400;
+          font-size: 16px;
+          color: #0c1f41;
+          &:nth-child(even) {
+            padding-right: 20px;
+          }
+        }
+      }
+    }
+  }
+  .order-details {
+    margin-top: 30px;
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      //-webkit-column-count: 3;
+      //-moz-column-count: 3;
+      //column-count: 3;
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        width: 33%;
+        h5 {
+          font-weight: 600;
+          font-size: 15px;
+          line-height: 19px;
+          /* identical to box height */
+          color: #0178e5;
+        }
+        p {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 28px;
+          /* or 140% */
+          color: #0c1f41;
+        }
+      }
+    }
+  }
+  .order-detail-table {
+    margin-top: -11px;
+    table {
+      border: 1px solid var(--ant-table-border);
+      border-collapse: collapse;
+      margin: 10px 0 0 0;
+      padding: 0;
+      width: 100%;
+      table-layout: fixed;
+      border-right: none;
+      tr {
+        border-bottom: 1px solid var(--ant-table-border);
+        padding: 10px 10px;
+        th {
+          background-color: var(--ant-table-th-background);
+          color: white;
+          font-size: 15px;
+          font-weight: 500;
+          padding: 10px 10px;
+          text-align: left;
+          position: relative;
+          &:before {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 1px;
+            height: 1.2em;
+            background-color: #dedede;
+            transform: translateY(-50%);
+            transition: background-color 0.2s;
+            content: '';
+            transition: 0.2s all;
+          }
+          &:last-child {
+            &:before {
+              background-color: rgba(0, 0, 0, 0);
+            }
+          }
+        }
+        td {
+          padding: 10px 10px;
+          text-align: left;
+          position: relative;
+          color: var(--theme-grey-text);
+          &:before {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 1px;
+            height: 1.2em;
+            background-color: var(--ant-table-td-border);
+            transform: translateY(-50%);
+            transition: background-color 0.2s;
+            content: '';
+            transition: 0.2s all;
+          }
+          &:first-child {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 18px;
+            /* identical to box height */
+            color: var(--theme-grey-text);
+          }
+          &:last-child {
+            &:before {
+              background-color: rgba(0, 0, 0, 0);
+            }
+          }
+        }
+
+        &.tr-hr {
+          border-bottom: 1px solid transparent;
+          td {
+            padding: 0;
+            &:before {
+              background-color: transparent;
+            }
+            &:nth-child(2) {
+              padding-left: 3%;
+            }
+            &:nth-child(3) {
+              padding-right: 5%;
+            }
+            hr {
+              background-color: var(--ant-table-td-border);
+            }
+          }
+        }
+
+        &.calculation {
+          border-bottom: 1px solid transparent;
+          td {
+            padding: 5px;
+            &:nth-child(1) {
+              &:before {
+                background-color: transparent;
+              }
+            }
+            &:nth-child(2) {
+              display: flex;
+              align-items: center;
+              justify-content: end;
+              text-align: right;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 14px;
+              line-height: 18px;
+              /* identical to box height */
+              color: var(--theme-grey-text);
+              position: relative;
+              &:before {
+                position: absolute;
+                content: ':';
+                top: 55%;
+                right: 1%;
+                width: 1px;
+                height: 1.2em;
+                background-color: transparent;
+                transform: translateY(-45%);
+                color: var(--ant-table-td-border);
+                font-size: 20px;
+              }
+            }
+            &:nth-child(3) {
+              padding-left: 10px;
+            }
+            .cal-title {
+              min-width: 150px;
+              text-align: left;
+            }
+          }
+          //  Total
+          &.total {
+            td {
+              &:nth-child(2) {
+                display: flex;
+                align-items: center;
+              }
+              .cal-title {
+                height: 60px;
+                display: flex;
+                align-items: center;
+              }
+            }
+            .total-count {
+              font-size: 30px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}

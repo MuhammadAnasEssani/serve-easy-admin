@@ -1,0 +1,2 @@
+status,cost,price,stock_amount,sku,description,is_shipping,sold_by_weight,category,printers,name,barcode,sub_category,classes,modifiers,media
+10,200,350,500,2343,chicken burger,TRUE,TRUE,"fast food, cashier",Test1,burger,23432,sub test 1,"Chicken, Beef",,url of media from gallery

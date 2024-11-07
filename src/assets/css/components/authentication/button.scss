@@ -1,0 +1,26 @@
+.theme-button {
+  .suffix-icon {
+    margin: 0 5px;
+  }
+}
+.ThemeBtn {
+  .btn-white-transparent {
+    border: 1px solid white;
+    color: white;
+    &:focus {
+      box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+    }
+  }
+  .btn-blue-transparent {
+    border: 1px solid #0178e5;
+    color: #0178e5;
+  }
+  .btn-white {
+    border: 1px solid white;
+    background: white;
+    color: #242831;
+    &:focus {
+      box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+    }
+  }
+}

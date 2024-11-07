@@ -1,0 +1,36 @@
+.forcasting-chart {
+  //margin-top: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  padding: 10px 15px;
+  background-color: white;
+  border-radius: 5px;
+  h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #0c1f41;
+    border-bottom: 1px solid #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 15px 0;
+  }
+  .forcasting-filters {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .Select-field {
+      height: 85px;
+    }
+    .dfields {
+      width: 100%;
+    }
+  }
+  .forcasting-heading {
+    margin-top: 15px;
+  }
+  .theme-button {
+    margin-top: 23px;
+  }
+}

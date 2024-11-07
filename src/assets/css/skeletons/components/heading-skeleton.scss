@@ -1,0 +1,8 @@
+.heading-skeleton {
+  display: flex;
+  align-items: center;
+  .ant-skeleton-element {
+    display: flex;
+    margin: 6px 0;
+  }
+}
